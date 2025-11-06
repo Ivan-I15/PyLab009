@@ -106,6 +106,7 @@ def decrypt(rev_code_book, ciphertext):
             rev_code_book[page][line][int(char)])
     return ''.join(plaintext)
 
+
 p, cb = load('./code_books/book1.json', 'books/ozymandias.txt')
 print(encrypt(cb, 'I am'))
 print(decrypt(p, '1-1-0-2-1-44-1-8-43-1-6-36'))
